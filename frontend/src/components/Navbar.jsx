@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 export default function Navbar() {
   return (
     <div className="w-full flex justify-center p-5 bg-white shadow-sm">
