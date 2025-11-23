@@ -404,7 +404,7 @@ const jobCards = [
   { title: "FULL-STACK AI DEVELOPER", gradient: "from-[#FFFFFF] to-[#E8E8E8]" },
 ];
 
-const Career = () => {
+const CareerDetails = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
   const handleSelect = (index) => {
@@ -602,7 +602,7 @@ const Career = () => {
   );
 };
 
-export default Career;
+export default CareerDetails ;
 
 
 

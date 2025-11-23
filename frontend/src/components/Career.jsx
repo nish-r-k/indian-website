@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Careers = () => {
+const Career = () => {
   const navigate = useNavigate();
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -85,6 +85,7 @@ const Careers = () => {
 
           {/* LIGHT BLUE ARROW CARD — SMALLER WIDTH & HEIGHT */}
           <div
+          onClick={() => handleNavigation("/careers")}
             className={`md:col-span-4 bg-[#C6FFF6] rounded-[40px] flex items-center justify-center transition-all duration-500 ease-out
               ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
               hover:cursor-pointer hover:scale-[1.04] hover:shadow-xl`}
@@ -110,4 +111,4 @@ const Careers = () => {
   );
 };
 
-export default Careers;
+export default Career;
