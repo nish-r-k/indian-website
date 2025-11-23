@@ -215,8 +215,7 @@ import { useNavigate } from "react-router-dom";
 const WhatWeOffer = () => {
   const navigate = useNavigate();
   const [hasScrolled, setHasScrolled] = useState(false);
-  const [showArrow, setShowArrow] = useState(false);
-  const [isRotating, setIsRotating] = useState(false);
+ 
   const [hoverIndex, setHoverIndex] = useState(null);
  
   const sectionRef = useRef(null);
@@ -313,8 +312,10 @@ const WhatWeOffer = () => {
   const handleNavigation = () => navigate("/services");
  
   return (
+    <div className="pt-[90px] px-6">
 <div className="w-full bg-white">
       {/* TOP SECTION */}
+      
 <div className="relative w-full bg-[#0F2E2E] rounded-3xl px-6 sm:px-10 md:px-14 py-12 sm:py-16 md:py-20 mt-10 max-w-7xl mx-auto shadow-lg transition-all duration-500">
 <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-14 min-h-[350px]">
 <div className="flex-1">
@@ -329,38 +330,7 @@ const WhatWeOffer = () => {
 </div>
  
           {/* Rotating Circle */}
-<div className="relative flex justify-center items-center">
-<div
-              onClick={handleNavigation}
-              className={`relative border-2 border-dashed border-white/70 rounded-full cursor-pointer transition-all duration-700 hover:scale-110 flex justify-center items-center ${
-                isRotating ? "animate-spin-slow" : ""
-              }`}
-              style={{ width: "210px", height: "210px" }}
->
-<span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xs font-semibold">
-                SEE ALL SERVICES
-</span>
-<span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 rotate-180 text-white text-xs font-semibold">
-                SEE ALL SERVICES
-</span>
- 
-              <svg
-                className={`absolute w-10 h-10 text-white transition-all duration-500 ${
-                  showArrow ? "opacity-100 scale-100" : "opacity-0 scale-75"
-                }`}
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                viewBox="0 0 24 24"
->
-<path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-</svg>
-</div>
-</div>
+
 </div>
 </div>
  
@@ -414,6 +384,7 @@ const WhatWeOffer = () => {
 </div>
 </div>
           ))}
+</div>
 </div>
 </div>
 </div>

@@ -69,6 +69,7 @@ const FaqSection = () => {
       ref={sectionRef}
       className="w-full bg-white py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12"
     >
+        <div className="pt-[90px] px-6">
       <div className="max-w-6xl mx-auto">
         {/* Main Heading */}
         <h1
@@ -135,6 +136,7 @@ const FaqSection = () => {
             );
           })}
         </div>
+      </div>
       </div>
     </section>
   );

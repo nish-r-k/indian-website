@@ -25,7 +25,7 @@ const NavbarMain = () => {
                 className="h-12 w-12 object-contain"
               />
               <Link to="/" className="text-xl md:text-2xl font-bold tracking-wide">
-                <span className="text-[#0268C7]">Sisuni</span>
+                <span className="text-[#0268C7]">Sisuni</span>{" "}
                 <span className="text-[#0268C7]">Infotech</span>
               </Link>
             </div>
@@ -36,14 +36,16 @@ const NavbarMain = () => {
               <Link to="/" className="text-gray-700 hover:text-black transition-colors">
                 Home
               </Link>
-              <Link to="/about" className="text-gray-700 hover:text-black transition-colors">
-                About Us
-              </Link>
+              
               <Link to="/services" className="text-gray-700 hover:text-black transition-colors">
                 Services
               </Link>
+
               <Link to="/careers" className="text-gray-700 hover:text-black transition-colors">
                 Careers
+              </Link>
+              <Link to="/about" className="text-gray-700 hover:text-black transition-colors">
+                About Us
               </Link>
 
               <Link to="/contact">

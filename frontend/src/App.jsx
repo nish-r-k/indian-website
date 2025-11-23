@@ -14,6 +14,8 @@ import AdminDashboard from './admin/AdminDashboard';
 import ContactPage from './pages/ContactPage';
 import Layout from './components/Layout';
 import MissionSection from './components/MissionSection';
+import JobOverview from './pages/JobOverview';
+import ApplyForm from './pages/ApplyForm';
 
 const App = () => {
   return (
@@ -28,11 +30,12 @@ const App = () => {
             <>
               <Hero />
               <MissionSection/>
-              <FaqSection />
+              
               <WhatWeOffer />
               <Projects />
               <WhyChooseUs />
               <Metrics />
+              <FaqSection />
              
             </>
           } />
@@ -42,6 +45,8 @@ const App = () => {
          <Route path="services" element={<WhatWeOffer />}/>
           <Route path="mission" element={<MissionSection/>}/>
           <Route path="/careers" element={<CareerDetails />} />
+          <Route path="/career/:id" element={<JobOverview />} />
+         <Route path="/career/:id/apply" element={<ApplyForm />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
 
