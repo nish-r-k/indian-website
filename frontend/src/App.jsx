@@ -11,27 +11,35 @@ import CareerDetails from './pages/CareerDetails';
 import Projects from './components/Projects';
 import AdminLogin from './admin/AdminLogin';
 import AdminDashboard from './admin/AdminDashboard';
+import NavbarMain from './components/NavbarMain';
+import ContactPage from './pages/ContactPage';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     
       <Router>
         <Routes>
+          
            {/* Home Page */}
         <Route path="/" element={
           <div>
+            <NavbarMain/>
            <Hero/>
+           <FaqSection/>
            <WhatWeOffer/>
            <Projects/>
            <WhyChooseUs/>
            <Metrics/>
            <Career/>
-           <FaqSection/>
+           <Footer/>
+           
           </div>
         } />
 
         {/* Careers Page */}
         <Route path="/careers" element={<CareerDetails />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         </Routes>
