@@ -20,7 +20,6 @@ const WhyChooseUs = () => {
           hasStarted.current = true;
           startAutomaticAnimation();
         } else if (!isInView) {
-          // Reset when out of view
           hasStarted.current = false;
           clearAllTimeouts();
           setCurrentStage(0);
@@ -100,7 +99,7 @@ const WhyChooseUs = () => {
     >
       <div className="max-w-[1400px] mx-auto relative" style={{ minHeight: '781px' }}>
         
-        {/* Stage 0: Initial Gray Card - Exact Figma Dimensions */}
+       
         <div
           className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
             currentStage === 0

@@ -113,19 +113,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* <div
-          onClick={() => handleNavigation("/contact")}
-          className={`absolute right-10 bottom-[100px] bg-[#CDE5FF] rounded-[40px] p-6 cursor-pointer group transition-all duration-500 ${
-            cardsLoaded ? "opacity-100" : "opacity-0"
-          } hover:scale-110 hover:shadow-2xl`}
-          style={{ width: "420px", height: "220px" }}
-        >
-          <p className="text-lg text-gray-800">Contact us</p>
-          <div className="mt-20 w-10 h-10 rounded-full bg-white/40 flex items-center justify-center transition-all group-hover:rotate-45">
-            ➜
-          </div>
-        </div> */}
-
 
         {/* Bottom Left Long Green Card */}
         <div
