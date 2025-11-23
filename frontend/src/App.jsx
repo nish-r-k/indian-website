@@ -9,6 +9,8 @@ import WhyChooseUs from './components/WhyChooseUs';
 import FaqSection from './components/FaqSection';
 import CareerDetails from './pages/CareerDetails';
 import Projects from './components/Projects';
+import AdminLogin from './admin/AdminLogin';
+import AdminDashboard from './admin/AdminDashboard';
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
 
         {/* Careers Page */}
         <Route path="/careers" element={<CareerDetails />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard/>} />
         </Routes>
 
       </Router>
