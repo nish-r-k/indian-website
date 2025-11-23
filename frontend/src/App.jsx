@@ -8,6 +8,7 @@ import Metrics from './components/Metrics';
 import WhyChooseUs from './components/WhyChooseUs';
 import FaqSection from './components/FaqSection';
 import CareerDetails from './pages/CareerDetails';
+import Projects from './components/Projects';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <div>
            <Hero/>
            <WhatWeOffer/>
+           <Projects/>
            <WhyChooseUs/>
            <Metrics/>
            <Career/>
