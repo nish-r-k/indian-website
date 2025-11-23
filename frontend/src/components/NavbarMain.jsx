@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import SisuniLogo from "../assets/SisuniLogo.png";
+import { HashLink } from "react-router-hash-link";
 
 const NavbarMain = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,18 +25,12 @@ const NavbarMain = () => {
                 className="h-12 w-12 object-contain"
               />
               <Link to="/" className="text-xl md:text-2xl font-bold tracking-wide">
-                <span className="text-gray-900">Sisuni</span>
-                <span className="text-gray-500">Infotech</span>
+                <span className="text-[#0268C7]">Sisuni</span>
+                <span className="text-[#0268C7]">Infotech</span>
               </Link>
             </div>
 
-            {/* CENTER TEXT - Only on Desktop */}
-            <div className="hidden md:flex flex-1 justify-center">
-              <span className="text-sm md:text-base font-semibold tracking-wider text-red-500">
-                sarVeka
-              </span>
-            </div>
-
+        
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center gap-8 text-sm md:text-base font-medium">
               <Link to="/" className="text-gray-700 hover:text-black transition-colors">

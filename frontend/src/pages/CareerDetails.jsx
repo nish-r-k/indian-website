@@ -421,22 +421,8 @@ const CareerDetails = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="px-6 py-3 bg-gray-100 border border-gray-300 rounded-xl text-gray-800 font-semibold text-xl shadow-sm">
-          Careers
-        </div>
-
-        <div className="flex gap-4">
-          {["Our services", "About us", "Work", "Contact Us"].map((item, i) => (
-            <motion.button
-              key={i}
-              className="px-6 py-3 bg-black text-white rounded-lg"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {item}
-            </motion.button>
-          ))}
-        </div>
+        
+        
       </motion.div>
 
       {/* HEADER TEXT */}
