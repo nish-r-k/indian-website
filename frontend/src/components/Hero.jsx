@@ -63,7 +63,7 @@ const Hero = () => {
         {/* Top Right - About Us (Black Square) */}
         <div
           onClick={() => handleNavigation("/about")}
-          className={`absolute right-10 top-[-50px] bg-[#2F3338] rounded-[40px] p-6 cursor-pointer text-white group transition-all duration-500 ${
+          className={`absolute right-10 top-[-100px] bg-[#2F3338] rounded-[40px] p-6 cursor-pointer text-white group transition-all duration-500 ${
             cardsLoaded ? "opacity-100" : "opacity-0"
           } hover:scale-110 hover:shadow-2xl`}
           style={{ width: "240px", height: "200px" }}
@@ -73,9 +73,7 @@ const Hero = () => {
             ➜
           </div>
         </div>
-
-        {/* Middle Right small purple square (Career) */}
-        <div
+{/* <div
           onClick={() => handleNavigation("/career")}
           className={`absolute right-10 top-[190px] bg-[#C6B7FF] rounded-[40px] p-6 cursor-pointer group transition-all duration-500 ${
             cardsLoaded ? "opacity-100" : "opacity-0"
@@ -86,10 +84,36 @@ const Hero = () => {
           <div className="mt-8 w-10 h-10 rounded-full bg-white/30 flex items-center justify-center transition-all group-hover:rotate-45">
             ➜
           </div>
+        </div> */}
+        {/* Middle Right small purple square (Career) */}
+        <div
+          onClick={() => handleNavigation("/career")}
+          className={`absolute right-10 top-[135px] bg-[#C6B7FF] rounded-[40px] p-6 cursor-pointer group transition-all duration-500 ${
+            cardsLoaded ? "opacity-100" : "opacity-0"
+          } hover:scale-110 hover:shadow-2xl`}
+          style={{ width: "420px", height: "220px" }}
+        >
+          <p className="text-lg">Career</p>
+          <div className="mt-8 w-10 h-10 rounded-full bg-white/30 flex items-center justify-center transition-all group-hover:rotate-45">
+            ➜
+          </div>
         </div>
 
         {/* Bottom Right Rectangle - Contact */}
         <div
+          onClick={() => handleNavigation("/contact")}
+          className={`absolute right-10 bottom-[140px] bg-[#CDE5FF] rounded-[40px] p-6 cursor-pointer group transition-all duration-500 ${
+            cardsLoaded ? "opacity-100" : "opacity-0"
+          } hover:scale-110 hover:shadow-2xl`}
+          style={{ width: "420px", height: "220px" }}
+        >
+          <p className="text-lg text-gray-800">Contact us</p>
+          <div className="mt-20 w-10 h-10 rounded-full bg-white/40 flex items-center justify-center transition-all group-hover:rotate-45">
+            ➜
+          </div>
+        </div>
+
+        {/* <div
           onClick={() => handleNavigation("/contact")}
           className={`absolute right-10 bottom-[100px] bg-[#CDE5FF] rounded-[40px] p-6 cursor-pointer group transition-all duration-500 ${
             cardsLoaded ? "opacity-100" : "opacity-0"
@@ -100,7 +124,8 @@ const Hero = () => {
           <div className="mt-20 w-10 h-10 rounded-full bg-white/40 flex items-center justify-center transition-all group-hover:rotate-45">
             ➜
           </div>
-        </div>
+        </div> */}
+
 
         {/* Bottom Left Long Green Card */}
         <div
