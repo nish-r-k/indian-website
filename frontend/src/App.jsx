@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero';
-import Careers from './components/Career';
+import Career from './components/Career';
 import WhatWeOffer from './components/WhatWeOffer';
 import ServicesPage from './components/ServicesPage';
 import Metrics from './components/Metrics';
 import WhyChooseUs from './components/WhyChooseUs';
 import FaqSection from './components/FaqSection';
+import CareerDetails from './pages/CareerDetails';
 
 const App = () => {
   return (
@@ -20,13 +21,13 @@ const App = () => {
            <WhatWeOffer/>
            <WhyChooseUs/>
            <Metrics/>
-           <Careers/>
+           <Career/>
            <FaqSection/>
           </div>
         } />
 
         {/* Careers Page */}
-        {/* <Route path="/careers" element={<CareersPage />} /> */}
+        <Route path="/careers" element={<CareerDetails />} />
         </Routes>
 
       </Router>
