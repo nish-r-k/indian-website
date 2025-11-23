@@ -29,7 +29,8 @@ const App = () => {
         } />
 
         {/* Careers Page */}
-        <Route path="/careers" element={<CareerDetails />} />
+        {/* <Route path="/careers" element={<CareerDetails />} /> */}
+        <Route path="/career" element={<CareerDetails/>}/>
         </Routes>
 
       </Router>
