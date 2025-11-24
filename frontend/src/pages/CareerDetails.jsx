@@ -227,6 +227,7 @@ const CareerDetails = () => {
   const navigate = useNavigate();
 
   return (
+    <div className="pt-[90px] px-6">
     <div className="w-full px-10 py-16">
 
       {/* HEADER */}
@@ -356,6 +357,7 @@ const CareerDetails = () => {
           </motion.div>
         ))}
       </motion.div>
+    </div>
     </div>
   );
 };
