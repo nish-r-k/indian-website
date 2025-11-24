@@ -106,7 +106,9 @@ const HeroSection = () => {
           </Link>
 <Link to="/careers">
           <motion.button
-            className="px-8 py-3 rounded-xl border border-white/80 text-white font-medium text-lg hover:bg-white/20 transition shadow-sm"
+            // className="px-8 py-3 rounded-xl border border-white/80 text-white font-medium text-lg hover:bg-white/20 transition shadow-sm"
+            // whileHover={{ scale: 1.07 }}
+             className="px-8 py-3 rounded-xl bg-white/90 text-gray-900 font-semibold text-lg hover:bg-white transition backdrop-blur-sm shadow-md"
             whileHover={{ scale: 1.07 }}
           >
             Careers

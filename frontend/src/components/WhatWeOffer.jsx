@@ -316,7 +316,7 @@ const WhatWeOffer = () => {
 <div className="w-full bg-white">
       {/* TOP SECTION */}
       
-<div className="relative w-full bg-[#0F2E2E] rounded-3xl px-6 sm:px-10 md:px-14 py-12 sm:py-16 md:py-20 mt-10 max-w-7xl mx-auto shadow-lg transition-all duration-500">
+{/* <div className="relative w-full bg-[#0F2E2E] rounded-3xl px-6 sm:px-10 md:px-14 py-12 sm:py-16 md:py-20 mt-10 max-w-7xl mx-auto shadow-lg transition-all duration-500">
 <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-14 min-h-[350px]">
 <div className="flex-1">
 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#A7F3D0] mb-4 leading-tight">
@@ -329,10 +329,27 @@ const WhatWeOffer = () => {
 </p>
 </div>
  
-          {/* Rotating Circle */}
+       
 
 </div>
+</div> */}
+<div
+  className="relative w-full bg-[#0F2E2E] rounded-3xl px-6 sm:px-10 md:px-14 py-12 sm:py-16 md:py-20 mt-10 max-w-7xl mx-auto shadow-lg transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(167,243,208,0.25)] hover:border hover:border-[#A7F3D0]/30"
+>
+  <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-14 min-h-[350px]">
+    <div className="flex-1">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#A7F3D0] mb-4 leading-tight">
+        What we offer
+      </h2>
+      <p className="text-[#A7F3D0] text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xl">
+        We provide clients with <br />
+        Tech Solutions developed with <br />
+        <span className="font-semibold">Skill & Passion</span>
+      </p>
+    </div>
+  </div>
 </div>
+
  
       {/* SERVICE SECTIONS */}
 <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-12 md:py-16 lg:py-20">

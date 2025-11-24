@@ -275,16 +275,46 @@ const ContactPage = () => {
               </div>
  
               {/* Social Icons */}
-              <div>
+              {/* <div>
                 <p className="text-lg font-semibold mb-4">Follow Us</p>
                 <div className="flex gap-6 items-center">
                   <Linkedin size={26} className="hover:scale-110 transition opacity-90" />
-                  <Instagram size={26} className="hover:scale-110 transition opacity-90" />
-                  <Facebook size={26} className="hover:scale-110 transition opacity-90" />
+                  
                   <Twitter size={26} className="hover:scale-110 transition opacity-90" />
                   <Youtube size={26} className="hover:scale-110 transition opacity-90" />
                 </div>
-              </div>
+              </div> */}
+              <div>
+  <p className="text-lg font-semibold mb-4">Follow Us</p>
+  <div className="flex gap-6 items-center">
+
+    <a 
+      href="https://www.linkedin.com/company/sisuni-technology-private-limited/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <Linkedin size={26} className="hover:scale-110 transition opacity-90 cursor-pointer" />
+    </a>
+
+    <a 
+      href="https://x.com/SisuniTech" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <Twitter size={26} className="hover:scale-110 transition opacity-90 cursor-pointer" />
+    </a>
+
+    <a 
+      href="https://www.youtube.com/@sisuniinfotech" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <Youtube size={26} className="hover:scale-110 transition opacity-90 cursor-pointer" />
+    </a>
+
+  </div>
+</div>
+
             </motion.div>
  
             {/* Form Section */}

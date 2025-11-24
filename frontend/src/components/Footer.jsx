@@ -111,6 +111,7 @@
 // export default Footer;
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Linkedin,
   Youtube,
@@ -158,21 +159,21 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h3 className="text-white font-semibold mb-4">Services</h3>
-          <ul className="space-y-2 text-sm">
-            {["Websites", "Applications", "Design Support", "Testing"].map(
-              (item) => (
-                <li
-                  key={item}
-                  className="hover:text-white hover:translate-x-1 transition-all duration-300 cursor-pointer"
-                >
-                  {item}
-                </li>
-              )
-            )}
-          </ul>
-        </div>
-
+  <h3 className="text-white font-semibold mb-4">Services</h3>
+  <ul className="space-y-2 text-sm">
+    {["Websites", "Applications", "Design Support", "Testing"].map((item) => (
+      <li key={item} className="transition-all duration-300">
+        <Link
+          to="/services"
+          className="hover:text-white hover:translate-x-1 block cursor-pointer"
+        >
+          {item}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
+        
         {/* Contact */}
         <div>
           <h3 className="text-white font-semibold mb-4">Connect</h3>
@@ -214,7 +215,7 @@ const Footer = () => {
                 className="cursor-pointer hover:text-white transition hover:scale-110"
               />
             </a>
-
+{/* 
             <a
               href="https://facebook.com"
               target="_blank"
@@ -224,7 +225,7 @@ const Footer = () => {
                 size={22}
                 className="cursor-pointer hover:text-white transition hover:scale-110"
               />
-            </a>
+            </a> */}
 
             <a
               href="https://x.com/SisuniTech"
