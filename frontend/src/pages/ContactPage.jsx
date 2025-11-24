@@ -305,7 +305,7 @@ const ContactPage = () => {
     </a>
 
     <a 
-      href="https://www.youtube.com/@sisuniinfotech" 
+      href="https://www.youtube.com/@SisuniTechnology" 
       target="_blank" 
       rel="noopener noreferrer"
     >
